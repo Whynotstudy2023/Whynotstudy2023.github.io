@@ -142,7 +142,7 @@
   <link rel="canonical" href="http://yoursite-url/cn/足球分析1/">
   <title>
     
-      关于我们“BSUFAS球懂小站” - either thin | or die
+      足球数据战术分析 - either thin | or die
     
   </title>
 <meta name="generator" content="Hexo 5.4.2"></head>
@@ -301,30 +301,6 @@
           
           
           
-          <!-- LangSelect start -->
-          <!-- LangSelect -->
-<li>
-  <a id="lang-select-label"><i class="fa fa-globe"></i>
-    <span>
-      简体中文
-    </span>
-    <select id="lang-select" data-canonical="cn/足球分析1/">
-      
-      
-      <option value="en" >
-        English
-      </option>
-      
-      <option value="cn"  selected >
-        简体中文
-      </option>
-      
-    </select>
-  </a>
-</li>
-
-          <!-- LangSelect end -->
-          
           
           
         </ul>
@@ -376,19 +352,19 @@
     .body--light {
       /* intro-header */
       --intro-header-background-image-url-home: url('/img/header_img/newhome_bg.png');
-      --intro-header-background-image-url-post: url('/img/header_img/lml_bg.jpg');
-      --intro-header-background-image-url-page: url('//img/header_img/lml_bg.jpg');
+      --intro-header-background-image-url-post: url('/img/header_img/tactics_analysis.jpg');
+      --intro-header-background-image-url-page: url('//img/header_img/tactics_analysis.jpg');
     }
     .body--dark {
       --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/newhome_bg.png');
-      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/lml_bg.jpg');
-      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('//img/header_img/lml_bg.jpg');
+      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/tactics_analysis.jpg');
+      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('//img/header_img/tactics_analysis.jpg');
     }
 
     header.intro-header {
        /*post*/
         background-image: var(--intro-header-background-image-url-post);
-        /* background-image: url('/img/header_img/lml_bg.jpg'); */
+        /* background-image: url('/img/header_img/tactics_analysis.jpg'); */
       
     }
 
@@ -413,18 +389,18 @@
           <div class="post-heading">
             <div class="tags">
               
-              <a class="tag" href="/tags/#爬虫" title="爬虫">爬虫</a>
-              
               <a class="tag" href="/tags/#数据分析" title="数据分析">数据分析</a>
               
-              <a class="tag" href="/tags/#自然语言处理" title="自然语言处理">自然语言处理</a>
+              <a class="tag" href="/tags/#足球" title="足球">足球</a>
+              
+              <a class="tag" href="/tags/#战术分析" title="战术分析">战术分析</a>
               
             </div>
-            <h1>关于我们“BSUFAS球懂小站”</h1>
-            <h2 class="subheading">计算机网络爬虫虫大健康</h2>
+            <h1>足球数据战术分析</h1>
+            <h2 class="subheading">基于懂球帝新闻数据的战术分析</h2>
             <span class="meta">
               Posted by Mei Yifan on
-              2024-05-10
+              2024-06-11
             </span>
 
 
@@ -432,11 +408,11 @@
             <!-- WordCount start -->
             <div class="blank_box"></div>
             <span class="meta">
-              Estimated Reading Time <span class="post-count">1</span> Minutes
+              Estimated Reading Time <span class="post-count">3</span> Minutes
             </span>
             <div class="blank_box"></div>
             <span class="meta">
-              Words <span class="post-count">162</span> In Total
+              Words <span class="post-count">979</span> In Total
             </span>
             <div class="blank_box"></div>
             <!-- WordCount end -->
@@ -498,22 +474,45 @@
       <!-- Post Container -->
       <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
 
-        <p><img src="https://example.com/img/soccer.jpg" alt="Soccer"></p>
-<h2 id="背景与目的">背景与目的</h2>
-<p>网络新闻数据占据了互联网数据的半壁江山。相比传统媒体，网络新闻具有传播迅速、曝光时间短、含有网民舆论等相关特征，其蕴含的价值也愈来愈大。网络数据正成为潜在宝藏，大量商业信息、社会信息以文本等存储在网页中，这些信息不同于传统的结构化数据，属于非结构化数据，需要我们使用一定的技术和方法将其转化为计算机能够理解的特征信息，然后对其进行分析处理。</p>
+        <p><img src="tactics_analysis.png" alt="足球战术分析"></p>
+<h2 id="前言">前言</h2>
+<p>足球比赛的战术分析是理解球队表现和制定比赛策略的重要部分。通过爬取懂球帝的足球新闻数据，我们可以获得大量关于比赛报道、球员动态和战术评论的信息。本文将利用这些数据，结合数据分析和可视化技术，对足球比赛的战术进行分析。</p>
+<h2 id="数据来源与处理">数据来源与处理</h2>
+<h3 id="数据来源">数据来源</h3>
+<p>本次分析的数据来源于懂球帝网站的新闻数据。通过爬虫技术，我们获取了国内、国际、更多赛事三个板块各20页的新闻数据，包含了比赛报道、球员表现和战术评论等内容。</p>
+<h3 id="数据处理">数据处理</h3>
+<p>为了便于分析，我们将爬取到的JSON数据转换为CSV格式，并对数据进行了清洗和预处理。具体步骤包括：</p>
+<ol>
+<li><strong>数据清洗</strong>：去除重复和无效数据，处理缺失值。</li>
+<li><strong>数据格式化</strong>：统一日期和时间格式，标准化球员和球队名称。</li>
+<li><strong>特征提取</strong>：从新闻内容中提取比赛结果、关键事件、球员表现等特征。</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="comment"># 加载并清洗数据</span></span><br><span class="line">data = pd.read_csv(<span class="string">&#x27;football_news.csv&#x27;</span>)</span><br><span class="line">data.drop_duplicates(inplace=<span class="literal">True</span>)</span><br><span class="line">data.fillna(<span class="string">&#x27;&#x27;</span>, inplace=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提取关键信息</span></span><br><span class="line">data[<span class="string">&#x27;match_result&#x27;</span>] = data[<span class="string">&#x27;context&#x27;</span>].apply(extract_match_result)</span><br><span class="line">data[<span class="string">&#x27;key_events&#x27;</span>] = data[<span class="string">&#x27;context&#x27;</span>].apply(extract_key_events)</span><br><span class="line">data[<span class="string">&#x27;player_performance&#x27;</span>] = data[<span class="string">&#x27;context&#x27;</span>].apply(extract_player_performance)</span><br></pre></td></tr></table></figure>
+<h2 id="战术趋势分析">战术趋势分析</h2>
+<h3 id="比赛战术分析">比赛战术分析</h3>
+<p>通过对比赛报道的文本分析，可以提取出球队在比赛中的战术布置和调整。比如，通过关键词分析和主题建模，我们可以识别出常用的战术体系（如4-4-2、4-3-3等）以及球队在比赛中的战术调整。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.feature_extraction.text <span class="keyword">import</span> CountVectorizer</span><br><span class="line"><span class="keyword">from</span> sklearn.decomposition <span class="keyword">import</span> LatentDirichletAllocation</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提取战术关键词</span></span><br><span class="line">vectorizer = CountVectorizer(max_features=<span class="number">1000</span>)</span><br><span class="line">X = vectorizer.fit_transform(data[<span class="string">&#x27;context&#x27;</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># 主题建模</span></span><br><span class="line">lda = LatentDirichletAllocation(n_components=<span class="number">5</span>, random_state=<span class="number">42</span>)</span><br><span class="line">lda.fit(X)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出主题关键词</span></span><br><span class="line"><span class="keyword">for</span> i, topic <span class="keyword">in</span> <span class="built_in">enumerate</span>(lda.components_):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;Topic <span class="subst">&#123;i&#125;</span>:&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>([vectorizer.get_feature_names_out()[index] <span class="keyword">for</span> index <span class="keyword">in</span> topic.argsort()[-<span class="number">10</span>:]])</span><br></pre></td></tr></table></figure>
+<h3 id="球员表现分析">球员表现分析</h3>
+<p>通过分析球员在比赛中的表现，可以评估其在不同战术体系中的适应性和贡献。比如，我们可以统计球员的进球数、助攻数、关键传球数等指标，并结合比赛结果进行分析。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line"><span class="comment"># 统计球员表现数据</span></span><br><span class="line">player_stats = data.groupby(<span class="string">&#x27;player&#x27;</span>)[<span class="string">&#x27;goals&#x27;</span>, <span class="string">&#x27;assists&#x27;</span>, <span class="string">&#x27;key_passes&#x27;</span>].<span class="built_in">sum</span>()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 可视化球员表现</span></span><br><span class="line">player_stats.plot(kind=<span class="string">&#x27;bar&#x27;</span>, figsize=(<span class="number">10</span>, <span class="number">6</span>))</span><br><span class="line">plt.title(<span class="string">&#x27;球员表现统计&#x27;</span>)</span><br><span class="line">plt.xlabel(<span class="string">&#x27;球员&#x27;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&#x27;数据&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<h2 id="战术调整与优化建议">战术调整与优化建议</h2>
+<h3 id="战术调整">战术调整</h3>
+<p>基于数据分析的结果，我们可以提出针对不同比赛情况的战术调整建议。比如，当面对防守反击型球队时，建议加强中场控制和边路进攻；当球队需要逆转比分时，建议增加前场压迫和快速反击。</p>
+<h3 id="球员使用优化">球员使用优化</h3>
+<p>通过分析球员在不同战术体系中的表现，我们可以提出球员使用的优化建议。比如，对于擅长控球和传球的中场球员，建议在控球型战术中担任核心角色；对于速度快和突破能力强的边锋，建议在反击战术中重点使用。</p>
+<h2 id="结论">结论</h2>
+<p>通过对懂球帝新闻数据的分析，我们可以深入了解足球比赛中的战术趋势和球员表现。这些数据不仅可以帮助教练团队制定科学的比赛策略，还可以为球迷提供更深入的比赛解读。未来，我们可以进一步结合实时比赛数据，开展更全面和细致的战术分析。</p>
+<p>感谢您的阅读，期待您的反馈和讨论！</p>
+<pre><code></code></pre>
 
 
         <hr>
         <!-- Pager -->
         <ul class="pager">
           
-          <li class="previous">
-            <a href="/cn/我们是谁/" data-toggle="tooltip" data-placement="top" title="关于我们“BSUFAS球懂小站”">&larr; Previous Post</a>
-          </li>
-          
           
           <li class="next">
-            <a href="/cn/足球分析2/" data-toggle="tooltip" data-placement="top" title="关于我们“BSUFAS球懂小站”">Next Post &rarr;</a>
+            <a href="/cn/数据结果/" data-toggle="tooltip" data-placement="top" title="数据处理与可视化分析">Next Post &rarr;</a>
           </li>
           
         </ul>
@@ -562,7 +561,7 @@
       </a>
     </li>
     <li class="social-share-li">
-      <a target="_blank" class="social-share-icon" href="mailto:?subject=关于我们“BSUFAS球懂小站”&body=Hi,I found this website and thought you might like it http://yoursite-url/cn/足球分析1/">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=足球数据战术分析&body=Hi,I found this website and thought you might like it http://yoursite-url/cn/足球分析1/">
         <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
       </a>
     </li>
@@ -597,7 +596,7 @@
       repo: '',
       owner: '',
       admin: '',
-      id: 'Fri May 10 2024 00:00:00 GMT+0800', // Ensure uniqueness and length less than 50
+      id: 'Tue Jun 11 2024 14:00:00 GMT+0800', // Ensure uniqueness and length less than 50
       distractionFreeMode: false, // Facebook-like distraction free mode
       perPage: 10,
       pagerDirection: 'last',
@@ -650,7 +649,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">目录</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E8%83%8C%E6%99%AF%E4%B8%8E%E7%9B%AE%E7%9A%84"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">背景与目的</span></a></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">前言</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%95%B0%E6%8D%AE%E6%9D%A5%E6%BA%90%E4%B8%8E%E5%A4%84%E7%90%86"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">数据来源与处理</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E6%95%B0%E6%8D%AE%E6%9D%A5%E6%BA%90"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">数据来源</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">数据处理</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%88%98%E6%9C%AF%E8%B6%8B%E5%8A%BF%E5%88%86%E6%9E%90"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">战术趋势分析</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E6%AF%94%E8%B5%9B%E6%88%98%E6%9C%AF%E5%88%86%E6%9E%90"><span class="toc-nav-number">3.1.</span> <span class="toc-nav-text">比赛战术分析</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E7%90%83%E5%91%98%E8%A1%A8%E7%8E%B0%E5%88%86%E6%9E%90"><span class="toc-nav-number">3.2.</span> <span class="toc-nav-text">球员表现分析</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%88%98%E6%9C%AF%E8%B0%83%E6%95%B4%E4%B8%8E%E4%BC%98%E5%8C%96%E5%BB%BA%E8%AE%AE"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">战术调整与优化建议</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E6%88%98%E6%9C%AF%E8%B0%83%E6%95%B4"><span class="toc-nav-number">4.1.</span> <span class="toc-nav-text">战术调整</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E7%90%83%E5%91%98%E4%BD%BF%E7%94%A8%E4%BC%98%E5%8C%96"><span class="toc-nav-number">4.2.</span> <span class="toc-nav-text">球员使用优化</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E7%BB%93%E8%AE%BA"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">结论</span></a></li></ol>
         
         </div>
       </aside>
@@ -673,11 +672,11 @@
           </h5>
           <div class="tags">
             
-            <a class="tag" href="/tags/#爬虫" title="爬虫">爬虫</a>
-            
             <a class="tag" href="/tags/#数据分析" title="数据分析">数据分析</a>
             
-            <a class="tag" href="/tags/#自然语言处理" title="自然语言处理">自然语言处理</a>
+            <a class="tag" href="/tags/#足球" title="足球">足球</a>
+            
+            <a class="tag" href="/tags/#战术分析" title="战术分析">战术分析</a>
             
           </div>
         </section>

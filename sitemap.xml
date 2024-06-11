@@ -65,6 +65,24 @@
   </url>
   
   <url>
+    <loc>http://yoursite-url/cn/Hexo-Theme-LiveMyLife/%E8%8B%B1%E8%B6%85/</loc>
+    
+    <lastmod>2024-06-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite-url/cn/Hexo-Theme-LiveMyLife/%E5%BE%B7%E7%94%B2/</loc>
+    
+    <lastmod>2024-06-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://yoursite-url/cn/%E6%88%91%E4%BB%AC%E6%98%AF%E8%B0%81/</loc>
     
     <lastmod>2024-05-09</lastmod>
@@ -190,6 +208,20 @@
   
   <url>
     <loc>http://yoursite-url/tags/%E8%AF%84%E8%AE%BA/</loc>
+    <lastmod>2024-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite-url/tags/%E8%8B%B1%E8%B6%85/</loc>
+    <lastmod>2024-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite-url/tags/%E5%BE%B7%E7%94%B2/</loc>
     <lastmod>2024-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

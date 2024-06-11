@@ -139,10 +139,10 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="http://yoursite-url/categories/">
+  <link rel="canonical" href="http://yoursite-url/cn/爬虫过程/">
   <title>
     
-      Categories - either thin | or die
+      网页数据爬取流程与实现 - either thin | or die
     
   </title>
 <meta name="generator" content="Hexo 5.4.2"></head>
@@ -239,7 +239,7 @@
       <div class="navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="/">HOME</a>
+            <a href="/">首页</a>
           </li>
 
           
@@ -249,7 +249,7 @@
           <li>
             <a href="/about/">
               
-              ABOUT
+              关于
               
               
             </a>
@@ -260,7 +260,7 @@
           <li>
             <a href="/categories/">
               
-              CATEGORIES
+              分类
               
               
             </a>
@@ -271,7 +271,7 @@
           <li>
             <a href="/tags/">
               
-              TAGS
+              标签
               
               
             </a>
@@ -282,7 +282,7 @@
           <li>
             <a href="/archive/">
               
-              ARCHIVES
+              归档
               
               
             </a>
@@ -293,36 +293,14 @@
           
           <li>
             <a class="popup-trigger">
-              <span class="search-icon"></span>SEARCH</a>
+              <span class="search-icon"></span>搜索</a>
           </li>
           
 
           <!-- LangSelect -->
           
           
-          <!-- LangSelect start -->
-          <!-- LangSelect -->
-<li>
-  <a id="lang-select-label"><i class="fa fa-globe"></i>
-    <span>
-      English
-    </span>
-    <select id="lang-select" data-canonical="categories/index.html">
-      
-      
-      <option value="en"  selected >
-        English
-      </option>
-      
-      <option value="cn" >
-        简体中文
-      </option>
-      
-    </select>
-  </a>
-</li>
-
-          <!-- LangSelect end -->
+          
           
           
         </ul>
@@ -374,19 +352,19 @@
     .body--light {
       /* intro-header */
       --intro-header-background-image-url-home: url('/img/header_img/newhome_bg.png');
-      --intro-header-background-image-url-post: url('img/header_img/categories_bg.jpg');
-      --intro-header-background-image-url-page: url('/img/header_img/categories_bg.jpg');
+      --intro-header-background-image-url-post: url('/img/header_img/crawling_process.jpg');
+      --intro-header-background-image-url-page: url('//img/header_img/crawling_process.jpg');
     }
     .body--dark {
       --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/newhome_bg.png');
-      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('img/header_img/categories_bg.jpg');
-      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/categories_bg.jpg');
+      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/crawling_process.jpg');
+      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('//img/header_img/crawling_process.jpg');
     }
 
     header.intro-header {
-       /*page*/
-        background-image: var(--intro-header-background-image-url-page);
-        /* background-image: url('/img/header_img/categories_bg.jpg'); */
+       /*post*/
+        background-image: var(--intro-header-background-image-url-post);
+        /* background-image: url('/img/header_img/crawling_process.jpg'); */
       
     }
 
@@ -408,10 +386,46 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           
-          <div class="site-heading">
-            <h1>Categories</h1>
-            <!--<hr class="small">-->
-            <span class="subheading">Hi , here is Categories ....</span>
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#爬虫课程" title="爬虫课程">爬虫课程</a>
+              
+              <a class="tag" href="/tags/#数据爬取" title="数据爬取">数据爬取</a>
+              
+              <a class="tag" href="/tags/#懂球帝" title="懂球帝">懂球帝</a>
+              
+            </div>
+            <h1>网页数据爬取流程与实现</h1>
+            <h2 class="subheading">爬取懂球帝网页新闻数据</h2>
+            <span class="meta">
+              Posted by Mei Yifan on
+              2024-06-11
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">1</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">344</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- WordCount end -->
+            
+            
+            <!-- 不蒜子统计 start -->
+            <span class="meta" id="busuanzi_container_page_pv">
+              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+            </span>
+            <!-- 不蒜子统计 end -->
+            
+
+
           </div>
           
         </div>
@@ -452,257 +466,310 @@
 	Friends Blog、
 	anchorjs、
 	) -->
-		<!-- Main Content -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <!-- 分类页面 -->
+		<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
 
-      
+        <p><img src="web_crawling.png" alt="网页数据爬取"></p>
+<h2 id="网页数据爬取流程">网页数据爬取流程</h2>
+<h3 id="爬取流程概述">爬取流程概述</h3>
+<p>为了爬取懂球帝的新闻数据，我们推测该网站的API地址为：<a target="_blank" rel="noopener" href="https://www.dongqiudi.com/api/app/tabs/web/56.json%E3%80%82%E6%89%80%E6%9C%89%E6%96%B0%E9%97%BB%E7%9A%84URL%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%E2%80%9Cshare%E2%80%9D%E5%AF%B9%E5%BA%94%E7%9A%84%E5%80%BC%E5%8A%A0%E4%B8%8A%E2%80%9Chtml%E2%80%9D%E5%90%8E%E7%BC%80%E6%9D%A5%E8%8E%B7%E5%BE%97%EF%BC%8C%E4%B8%8B%E4%B8%80%E9%A1%B5%E7%9A%84API%E5%88%99%E7%94%B1%E2%80%9Cnext%E2%80%9D%E5%AF%B9%E5%BA%94%E7%9A%84%E5%80%BC%E6%9D%A5%E7%A1%AE%E5%AE%9A%E3%80%82">https://www.dongqiudi.com/api/app/tabs/web/56.json。所有新闻的URL可以通过“share”对应的值加上“html”后缀来获得，下一页的API则由“next”对应的值来确定。</a></p>
+<h3 id="具体实现步骤">具体实现步骤</h3>
+<ol>
+<li><strong>发送请求</strong>：模拟浏览器发送请求，获取网页响应。</li>
+<li><strong>解析响应</strong>：解析HTML内容，提取需要的新闻数据。</li>
+<li><strong>保存数据</strong>：将提取的数据保存为JSON格式，方便后续处理。</li>
+</ol>
+<h3 id="结果展示">结果展示</h3>
+<p>爬取国内、国际、更多赛事三个板块各20页新闻数据，共得到China、internation、more三大文件夹，其中internation文件夹下包含Bundesliga、LaLiga、PremierLeague、SerieA四个文件夹，在文件夹中存放了各版块新闻的json数据。</p>
+<p>每个JSON文件中存放了以下特征数据：</p>
+<ul>
+<li><code>title</code>：新闻标题</li>
+<li><code>author</code>：作者</li>
+<li><code>date</code>：发布日期</li>
+<li><code>context</code>：新闻内容</li>
+<li><code>context_img</code>：新闻图片</li>
+<li><code>context_video</code>：新闻视频</li>
+<li><code>comments_num</code>：评论数</li>
+<li><code>comments</code>：评论内容</li>
+<li><code>tag</code>：标签</li>
+<li><code>relative_news</code>：相关新闻</li>
+</ul>
+<h3 id="实现代码示例">实现代码示例</h3>
+<pre><code class="language-python">import requests
+import json
 
-      <!-- 标签云 -->
-      <div id='tag_cloud' class="tags">
+# 发送请求获取数据
+response = requests.get('https://www.dongqiudi.com/api/app/tabs/web/56.json')
+data = response.json()
+
+# 解析数据并保存为json文件
+with open('news_data.json', 'w', encoding='utf-8') as f:
+    json.dump(data, f, ensure_ascii=False, indent=4)
+</code></pre>
+
+
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
+          
+          <li class="previous">
+            <a href="/cn/数据结果/" data-toggle="tooltip" data-placement="top" title="数据处理与可视化分析">&larr; Previous Post</a>
+          </li>
+          
+          
+          <li class="next">
+            <a href="/cn/我们是谁/" data-toggle="tooltip" data-placement="top" title="关于我们“BSUFAS球懂小站”">Next Post &rarr;</a>
+          </li>
+          
+        </ul>
+
         
-        <a href="#Hexo-Theme-LiveMyLife" title="Hexo-Theme-LiveMyLife" rel="1">Hexo-Theme-LiveMyLife</a>
+        <!-- tip start -->
+        <!-- tip -->
+<!-- tip start -->
+<div class="tip">
+  <p>
+    
+      如果您喜欢此博客或发现它对您有用，则欢迎对此发表评论。 也欢迎您共享此博客，以便更多人可以参与。 如果博客中使用的图像侵犯了您的版权，请与作者联系以将其删除。 谢谢 ！
+    
+  </p>
+</div>
+<!-- tip end -->
+
+        <!-- tip end -->
         
-        <a href="#数据科学" title="数据科学" rel="6">数据科学</a>
+
         
-        <a href="#爬虫技术" title="爬虫技术" rel="1">爬虫技术</a>
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-qq">
+        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=网页数据爬取流程与实现&body=Hi,I found this website and thought you might like it http://yoursite-url/cn/爬虫过程/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+        <!-- Sharing End -->
         
-        <a href="#数据分析" title="数据分析" rel="1">数据分析</a>
-        
+        <hr>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+  <!-- gitalk start -->
+  <!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+  <div id="gitalk-container"></div>
+
+  
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
+    <script src="/js/comment/gitalk.js"></script>
+  
+
+  <script>
+    var gitalk = new Gitalk({
+      clientID: '',
+      clientSecret: '',
+      repo: '',
+      owner: '',
+      admin: '',
+      id: 'Tue Jun 11 2024 12:30:00 GMT+0800', // Ensure uniqueness and length less than 50
+      distractionFreeMode: false, // Facebook-like distraction free mode
+      perPage: 10,
+      pagerDirection: 'last',
+      createIssueManually: false,
+      language: 'en',
+      proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
+    });
+    gitalk.render('gitalk-container');
+
+    var gtFolded = () => {
+      setTimeout(function () {
+        let markdownBody = document.getElementsByClassName("markdown-body");
+        let list = Array.from(markdownBody);
+        list.forEach(item => {
+          if (item.clientHeight > 250) {
+            item.classList.add('gt-comment-body-folded');
+            item.style.maxHeight = '250px';
+            item.title = 'Click to Expand';
+            item.onclick = function () {
+              item.classList.remove('gt-comment-body-folded');
+              item.style.maxHeight = '';
+              item.title = '';
+              item.onclick = null;
+            };
+          }
+        })
+      }, 800);
+    }
+  </script>
+
+  <!-- gitalk end -->
+
+
+<!-- 2. gitment comment -->
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
       </div>
 
-      <!-- 标签列表 -->
-      
-      <div class="one-tag-list">
-        <span class="fa fa-tag listing-seperator" id="Hexo-Theme-LiveMyLife">
-          <span class="tag-text">Hexo-Theme-LiveMyLife</span>
-        </span>
-        
-        <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-        <div class="post-preview">
-          <a href="/en/Hexo-Theme-LiveMyLife/">
-            <h2 class="post-title">
-              Hexo-Theme-LiveMyLife
-              
-            </h2>
-            
-            <h3 class="post-subtitle">
-              A succinct hexo theme...
-            </h3>
-            
-          </a>
-          <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </div>
-        <hr>
-        
-      </div>
-      
-      <div class="one-tag-list">
-        <span class="fa fa-tag listing-seperator" id="数据科学">
-          <span class="tag-text">数据科学</span>
-        </span>
-        
-        <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-        <div class="post-preview">
-          <a href="/cn/数据结果/">
-            <h2 class="post-title">
-              数据处理与可视化分析
-              
-              -- cn
-              
-            </h2>
-            
-            <h3 class="post-subtitle">
-              爬取数据的处理与分析
-            </h3>
-            
-          </a>
-          <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </div>
-        <hr>
-        
-        <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-        <div class="post-preview">
-          <a href="/cn/我们是谁/">
-            <h2 class="post-title">
-              关于我们“BSUFAS球懂小站”
-              
-              -- cn
-              
-            </h2>
-            
-            <h3 class="post-subtitle">
-              计算机网络爬虫虫大健康
-            </h3>
-            
-          </a>
-          <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </div>
-        <hr>
-        
-        <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-        <div class="post-preview">
-          <a href="/cn/爬虫过程/">
-            <h2 class="post-title">
-              网页数据爬取流程与实现
-              
-              -- cn
-              
-            </h2>
-            
-            <h3 class="post-subtitle">
-              爬取懂球帝网页新闻数据
-            </h3>
-            
-          </a>
-          <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </div>
-        <hr>
-        
-        <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-        <div class="post-preview">
-          <a href="/cn/足球分析1/">
-            <h2 class="post-title">
-              关于我们“BSUFAS球懂小站”
-              
-              -- cn
-              
-            </h2>
-            
-            <h3 class="post-subtitle">
-              计算机网络爬虫虫大健康
-            </h3>
-            
-          </a>
-          <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </div>
-        <hr>
-        
-        <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-        <div class="post-preview">
-          <a href="/cn/足球分析2/">
-            <h2 class="post-title">
-              关于我们“BSUFAS球懂小站”
-              
-              -- cn
-              
-            </h2>
-            
-            <h3 class="post-subtitle">
-              计算机网络爬虫虫大健康
-            </h3>
-            
-          </a>
-          <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </div>
-        <hr>
-        
-        <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-        <div class="post-preview">
-          <a href="/cn/足球分析3/">
-            <h2 class="post-title">
-              关于我们“BSUFAS球懂小站”
-              
-              -- cn
-              
-            </h2>
-            
-            <h3 class="post-subtitle">
-              计算机网络爬虫虫大健康
-            </h3>
-            
-          </a>
-          <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </div>
-        <hr>
-        
-      </div>
-      
-      <div class="one-tag-list">
-        <span class="fa fa-tag listing-seperator" id="爬虫技术">
-          <span class="tag-text">爬虫技术</span>
-        </span>
-        
-        <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-        <div class="post-preview">
-          <a href="/cn/爬虫过程/">
-            <h2 class="post-title">
-              网页数据爬取流程与实现
-              
-              -- cn
-              
-            </h2>
-            
-            <h3 class="post-subtitle">
-              爬取懂球帝网页新闻数据
-            </h3>
-            
-          </a>
-          <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </div>
-        <hr>
-        
-      </div>
-      
-      <div class="one-tag-list">
-        <span class="fa fa-tag listing-seperator" id="数据分析">
-          <span class="tag-text">数据分析</span>
-        </span>
-        
-        <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-        <div class="post-preview">
-          <a href="/cn/数据结果/">
-            <h2 class="post-title">
-              数据处理与可视化分析
-              
-              -- cn
-              
-            </h2>
-            
-            <h3 class="post-subtitle">
-              爬取数据的处理与分析
-            </h3>
-            
-          </a>
-          <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </div>
-        <hr>
-        
-      </div>
-      
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
 
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">目录</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E7%BD%91%E9%A1%B5%E6%95%B0%E6%8D%AE%E7%88%AC%E5%8F%96%E6%B5%81%E7%A8%8B"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">网页数据爬取流程</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E7%88%AC%E5%8F%96%E6%B5%81%E7%A8%8B%E6%A6%82%E8%BF%B0"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">爬取流程概述</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E5%85%B7%E4%BD%93%E5%AE%9E%E7%8E%B0%E6%AD%A5%E9%AA%A4"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">具体实现步骤</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E7%BB%93%E6%9E%9C%E5%B1%95%E7%A4%BA"><span class="toc-nav-number">1.3.</span> <span class="toc-nav-text">结果展示</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B"><span class="toc-nav-number">1.4.</span> <span class="toc-nav-text">实现代码示例</span></a></li></ol></li></ol>
+        
+        </div>
+      </aside>
+    
+
+
+
+      <!-- Sidebar Container -->
+      <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+        <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">特色标签</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#爬虫课程" title="爬虫课程">爬虫课程</a>
+            
+            <a class="tag" href="/tags/#数据爬取" title="数据爬取">数据爬取</a>
+            
+            <a class="tag" href="/tags/#懂球帝" title="懂球帝">懂球帝</a>
+            
+          </div>
+        </section>
+        
+
+        <!-- Friends Blog -->
+        
+        <hr>
+        <h5>链友</h5>
+        <ul class="list-inline">
+
+          
+          <li>
+            <a href="https://www.dongqiudi.com" target="_blank">懂球帝</a>
+          </li>
+          
+          <li>
+            <a href="https://www.bsu.edu.cn" target="_blank">BSU北京体育大学</a>
+          </li>
+          
+          <li>
+            <a href="https://sse.bsu.edu.cn" target="_blank">SSE体育工程学院</a>
+          </li>
+          
+          <li>
+            <a href="https://hexo.io/" target="_blank">Hexo</a>
+          </li>
+          
+        </ul>
+        
+      </div>
     </div>
   </div>
-</div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
 
 
 		<!-- Footer (contains ThemeColor、viewer) -->
@@ -894,7 +961,7 @@ start: '#bbbbee', end: '#0085a1' } }; $('#tag_cloud a').tagcloud(); }) } </scrip
             <span class="search-icon">
               <i class="fa fa-search fa-lg" style="margin: 25px 10px 25px 20px;"></i>
             </span>
-            <input autocomplete="off" placeholder="SEARCH..." type="text" id="local-search-input">
+            <input autocomplete="off" placeholder="搜索..." type="text" id="local-search-input">
           </div>
         </div>
         <div id="local-search-result"></div>
